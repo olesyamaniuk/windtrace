@@ -1,331 +1,386 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="" />
-    <title></title>
-    <link rel="icon" href="img" />
+    <title>Wind Trace: Line Connect</title>
+    <link rel="icon" href="img/500x500.png" />
 
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" href="css/main.css" />
   </head>
 
   <body>
-    <div id="cookie-popup" class="class-cookie-popup">
-      <div class="class-cookie-popup-container">
-        <p class="class-cookie-popup-text-two">
+    <div id="cookie-popup" class="i-b-cookie-popup">
+      <div class="i-b-cookie-popup-container">
+        <p class="i-b-cookie-popup-text-two">
           We use cookies to improve your experience on our website. By browsing
           this website, you agree to our use of cookies.
         </p>
-        <div class="class-cookie-button-container">
-          <button id="accept-cookies" class="class-cookie-button">
+        <div class="i-b-cookie-button-container">
+          <button id="accept-cookies" class="i-b-cookie-button">
             Accept cookies
           </button>
-          <button id="decline-cookies" class="class-cookie-button">
+          <button id="decline-cookies" class="i-b-cookie-button">
             Decline Cookies
           </button>
         </div>
       </div>
     </div>
-    <header class="class-header">
-      <div class="class-header-background"></div>
-      <nav class="class-navigation">
-        <ul class="class-navigation-list">
-          <li class="class-navigation-item">
-            <a href="/" class="class-navigation-link">
+    <header class="i-b-header">
+      <div class="i-b-header-background"></div>
+      <nav class="i-b-navigation">
+        <ul class="i-b-navigation-list">
+          <li class="i-b-navigation-item">
+            <a href="/" class="i-b-navigation-link">
               <img
-                class="class-title-img class-navigation-img"
+                class="i-b-title-img i-b-navigation-img"
                 alt="logo"
-                src="img"
-                style=""
+                src="img/500x500.png"
+                style="
+                  width: 44px;
+                  height: 44px;
+
+                  border-radius: 10px;
+                "
               />
             </a>
           </li>
-          <li class="class-navigation-item">
-            <a href="/" class="class-navigation-link">Home</a>
+          <li class="i-b-navigation-item">
+            <a href="/" class="i-b-navigation-link">Home</a>
           </li>
-          <li class="class-navigation-item">
-            <a href="/#about" class="class-navigation-link">About the Game</a>
+          <li class="i-b-navigation-item">
+            <a href="/#about" class="i-b-navigation-link">Concept</a>
           </li>
-          <li class="class-navigation-item">
-            <a href="/#why" class="class-navigation-link">Why Us?</a>
-          </li>
-          <li class="class-navigation-item">
-            <a href="/#uniqueness" class="class-navigation-link"
-              >Our Uniqueness</a
-            >
+          <li class="i-b-navigation-item">
+            <a href="/#uniqueness" class="i-b-navigation-link">Levels</a>
           </li>
 
-          <li class="class-navigation-item">
-            <a href="/#how" class="class-navigation-link">How to Play</a>
+          <li class="i-b-navigation-item">
+            <a href="/#how" class="i-b-navigation-link">How It Works</a>
           </li>
-          <li class="class-navigation-item">
-            <a href="/#characters" class="class-navigation-link">Characters</a>
+          <li class="i-b-navigation-item">
+            <a href="/#why" class="i-b-navigation-link">Modes</a>
           </li>
-          <li class="class-navigation-item">
-            <a href="/#reviews" class="class-navigation-link">User Reviews</a>
-          </li>
-          <li class="class-navigation-item">
-            <a href="/#faq" class="class-navigation-link">FAQ</a>
-          </li>
-          <li class="class-navigation-item">
-            <a href="/#gallery" class="class-navigation-link">Gallery</a>
-          </li>
-          <li class="class-navigation-item">
-            <a href="/#features" class="class-navigation-link">Features</a>
-          </li>
-          <li class="class-navigation-item">
-            <a
-              href="/policy.html"
-              class="class-navigation-link class-navigation-item-desk"
-            >
-              Privacy Policy
-            </a>
-          </li>
-          <li class="class-navigation-item">
-            <a
-              href="/terms.html"
-              class="class-navigation-link class-navigation-item-desk"
-            >
-              Terms and Conditions
-            </a>
-          </li>
-          <li class="class-navigation-item">
-            <a
-              href="/cookies.html"
-              class="class-navigation-link class-navigation-item-desk"
-            >
-              Cookies Policy
-            </a>
+          <li class="i-b-navigation-item">
+            <a href="/#faq" class="i-b-navigation-link">FAQ</a>
           </li>
         </ul>
 
-        <div class="class-header-button-wrapper">
-          <a href="/" class="class-policy-terms-header-icon-menu">
+        <div class="i-b-header-button-wrapper">
+          <a href="/" class="i-b-policy-terms-header-icon-menu">
             <img
               href="/"
-              class="class-title-img"
+              class="i-b-title-img"
               alt="logo"
-              src="img"
-              style=""
+              src="img/500x500.png"
+              style="
+                width: 44px;
+                height: 44px;
+
+                border-radius: 10px;
+              "
             />
           </a>
 
-          <button
-            type="button"
-            class="class-header-icon-button"
-            data-menu-button
-          >
-            <img
-              class="class-header-icon class-header-icon-menu"
-              src="img/header/menu.png"
-              style=""
-              alt="menu "
-            />
-            <img
-              class="class-header-icon class-header-icon-close"
-              src="img/header/menu (1).png"
-              alt="close"
-            />
+          <button type="button" class="i-b-header-icon-button" data-menu-button>
+            <svg
+              class="i-b-header-icon i-b-header-icon-menu"
+              width="64"
+              height="64"
+              viewBox="0 0 64 64"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M44 40L20 40"
+                stroke="#00446D"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="M44 32L20 32"
+                stroke="#00446D"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="M44 24L20 24"
+                stroke="#00446D"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+            <svg
+              class="i-b-header-icon i-b-header-icon-close"
+              width="64"
+              height="64"
+              viewBox="0 0 64 64"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M44 40L20 40"
+                stroke="#00446D"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="M44 32L20 32"
+                stroke="#00446D"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="M44 24L20 24"
+                stroke="#00446D"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
           </button>
         </div>
       </nav>
     </header>
 
     <main>
-      <section class="class-home" id="home">
-        <div class="class-home-container">
-          <div class="class-home-container-top">
-            <h1>
-              <img class="class-home-title-img" src="/img/home" alt="" />
+      <section class="i-b-home" id="home">
+        <div class="i-b-home-container">
+          <div class="i-b-home-container-top">
+            <h1 class="i-b-home-title">
+              Wind Trace: <br />
+              Line Connect
             </h1>
-            <p class="class-home-title">Merge Food - Chef Decoration</p>
-            <p class="class-home-text">
-              Cook, Merge, and Create Your Dream Kitchen!
+            <p class="i-b-home-text">
+              So you're drawing this path, right? And there's wind that messes
+              with it. <br />
+              You start with a simple goal: connect point A to point B. <br />
+              But the wind never stands still. <br />
+              As you draw, it gently pushes your line off course. Sometimes
+              left. Sometimes right. <br />
+              You don’t fight it. <br />
+              You adjust.
             </p>
-            <a class="class-home-link" href="#" target="_blank">
-              <img class="class-home-img" src="./img/home" alt="google play" />
-            </a>
           </div>
         </div>
       </section>
-      <section class="class-about" id="about">
-        <div class="class-about-container">
-          <h2 class="class-about-title">About the Game</h2>
-          <p class="class-about-text">
-            <span class="class-about-text-bold"
-              >Merge Food - Chef Decoration</span
-            >
-            combines the
+      <section class="i-b-about" id="about">
+        <div class="i-b-about-container">
+          <h2 class="i-b-about-title">Concept</h2>
+          <p class="i-b-about-text-bold">
+            A line, a breeze, and a steady hand.
+          </p>
+          <p class="i-b-about-text">
+            <span class="i-b-about-text-span">Wind Trace: Line Connects</span>
+            is a simple line puzzle built around movement and control. You drag
+            your finger to draw a path from start to finish while shifting wind
+            currents subtly influence your direction. <br />
+            You control the path, but the wind's gonna do its own thing too.
+            <br />
+            It’s easy to understand in seconds. <br />
+            It takes practice to master.
           </p>
         </div>
       </section>
-      <article class="class-why" id="why">
+      <section class="i-b-uniqueness" id="uniqueness">
+        <div class="i-b-uniqueness-container">
+          <h2 class="i-b-about-title">Core Mechanics</h2>
+          <p class="i-b-about-text-bold">Drag. Adapt. Complete.</p>
+          <p class="i-b-about-text">
+            Drag to draw a continuous line <br />
+            Wind shifts direction every few seconds <br />Avoid static and
+            moving obstacles <br />
+            Reach the end point without breaking the path <br />
+            The wind doesn't stop you; it just gives you a little nudge. Every
+            shift forces small adjustments. Precision and patience matter more
+            than speed.
+          </p>
+        </div>
+      </section>
+      <section class="i-b-how" id="how">
+        <div class="i-b-how-container">
+          <h2 class="i-b-about-title">How The Wind Works</h2>
+          <p class="i-b-about-text-bold">
+            The world moves, <br />
+            even when you don’t.
+          </p>
+          <p class="i-b-about-text">
+            Wind direction changes in intervals. Sometimes gently. Sometimes
+            with stronger force. <br />
+            You can see subtle visual cues before each shift. Observing these
+            patterns helps you anticipate the next push. <br />
+            It's not random or anything - you just gotta stay steady when things
+            get a bit tricky.
+          </p>
+        </div>
+      </section>
+      <article class="i-b-why" id="why">
         <span style="display: none"
-          >Generated: 2025-04-12, Hash: class-qk-class-39fd7x</span
+          >Generated: 2026-04-01, Hash: i-b-qk-i-b-39fd7x</span
         >
 
-        <div class="class-why-container">
-          <h2 class="class-about-title">Why Us?</h2>
-          <dl class="class-why-list">
-            <div class="class-why-item">
-              <figure class="class-why-img">
-                <img class="class-why-img" src="img/why" alt="" />
+        <div class="i-b-why-container">
+          <h2
+            class="i-b-about-title"
+            style="color: #ffffff; text-align: center"
+          >
+            Modes
+          </h2>
+          <p
+            class="i-b-about-text-bold"
+            style="color: #ffffff; text-align: center"
+          >
+            Different ways to trace.
+          </p>
+          <dl class="i-b-why-list">
+            <div class="i-b-why-item">
+              <dt class="i-b-why-text-bold">Classic Mode</dt>
+              <figure class="i-b-why-img">
+                <img class="i-b-why-img" src="img/1 (1).png" alt="image" />
               </figure>
-              <div>
-                <dt class="class-why-text-bold">Fun and Relaxing:</dt>
-                <dd class="class-why-text">Perfect for unwinding after a</dd>
-              </div>
+
+              <dd class="i-b-why-text">
+                Progress through handcrafted levels with increasing difficulty.
+              </dd>
+            </div>
+            <div class="i-b-why-item">
+              <dt class="i-b-why-text-bold">Endless Drift</dt>
+              <figure class="i-b-why-img">
+                <img class="i-b-why-img" src="img/1 (2).png" alt="image" />
+              </figure>
+
+              <dd class="i-b-why-text">
+                Draw as long as possible while wind grows stronger over time.
+              </dd>
+            </div>
+            <div class="i-b-why-item">
+              <dt class="i-b-why-text-bold">Precision Mode</dt>
+              <figure class="i-b-why-img">
+                <img class="i-b-why-img" src="img/1 (3).png" alt="image" />
+              </figure>
+
+              <dd class="i-b-why-text">
+                Complete levels using the shortest possible path.
+              </dd>
             </div>
           </dl>
         </div>
       </article>
-      <section class="class-uniqueness" id="uniqueness">
-        <div class="class-uniqueness-container">
-          <h2 class="class-about-title">Our Uniqueness</h2>
-          <div class="class-uniqueness-list">
-            <div class="class-uniqueness-item">
-              <img class="class-uniqueness-img" src="" alt="" />
-              <p class="class-uniqueness-text-bold">1. Food Fusion Fun</p>
-              <p class="class-uniqueness-text">
-                Discover unexpected recipes and combinations by merging
-                ingredients.
-              </p>
+      <section class="i-b-faq" id="faq">
+        <div class="i-b-faq-container">
+          <h2 class="i-b-about-title">FAQ</h2>
+          <div class="i-b-faq-wrapper">
+            <img class="i-b-faq-img" src="/img/1.png" alt="girl" />
+            <div class="i-b-faq-list">
+              <div class="i-b-faq-item">
+                <div class="i-b-faq-question" onclick="toggleAnswer(this)">
+                  <span>Is the game difficult?</span>
+                  <button class="i-b-toggle-button">
+                    <img src="/img/arrow-drop-down (1).png" alt="Toggle" />
+                  </button>
+                </div>
+                <div class="i-b-faq-answer">
+                  It starts very accessible. The early levels allow wide
+                  movement and gentle wind shifts so you can learn the mechanic
+                  comfortably. As you progress, tighter spaces and stronger
+                  gusts increase the challenge. It gets harder as you go, but
+                  not in a way that'll frustrate you.
+                </div>
+              </div>
+              <div class="i-b-faq-item">
+                <div class="i-b-faq-question" onclick="toggleAnswer(this)">
+                  <span>Can I stop drawing once I start?</span>
+                  <button class="i-b-toggle-button">
+                    <img src="/img/arrow-drop-down (1).png" alt="Toggle" />
+                  </button>
+                </div>
+                <div class="i-b-faq-answer">
+                  The line must remain continuous once you begin. However, you
+                  can slow down and adjust your direction carefully while
+                  drawing. Precision is more important than speed. Restarting a
+                  level is quick if you want a fresh attempt.
+                </div>
+              </div>
+              <div class="i-b-faq-item">
+                <div class="i-b-faq-question" onclick="toggleAnswer(this)">
+                  <span>How often does the wind change?</span>
+                  <button class="i-b-toggle-button">
+                    <img src="/img/arrow-drop-down (1).png" alt="Toggle" />
+                  </button>
+                </div>
+                <div class="i-b-faq-answer">
+                  Wind shifts every few seconds, depending on the level. Early
+                  stages have predictable patterns. Later levels introduce
+                  quicker or less obvious changes. Visual cues help you
+                  anticipate each shift.
+                </div>
+              </div>
+              <div class="i-b-faq-item">
+                <div class="i-b-faq-question" onclick="toggleAnswer(this)">
+                  <span>What happens if I hit an obstacle?</span>
+                  <button class="i-b-toggle-button">
+                    <img src="/img/arrow-drop-down (1).png" alt="Toggle" />
+                  </button>
+                </div>
+                <div class="i-b-faq-answer">
+                  What happens if I hit an obstacle?
+                </div>
+              </div>
+              <div class="i-b-faq-item">
+                <div class="i-b-faq-question" onclick="toggleAnswer(this)">
+                  <span>Are there moving obstacles?</span>
+                  <button class="i-b-toggle-button">
+                    <img src="/img/arrow-drop-down (1).png" alt="Toggle" />
+                  </button>
+                </div>
+                <div class="i-b-faq-answer">
+                  Yes, later levels introduce moving elements and
+                  multi-directional wind zones. These require more anticipation
+                  and smoother adjustments. They add tension without
+                  overwhelming the core simplicity.
+                </div>
+              </div>
+              <div class="i-b-faq-item">
+                <div class="i-b-faq-question" onclick="toggleAnswer(this)">
+                  <span>Is it suitable for short sessions?</span>
+                  <button class="i-b-toggle-button">
+                    <img src="/img/arrow-drop-down (1).png" alt="Toggle" />
+                  </button>
+                </div>
+                <div class="i-b-faq-answer">
+                  Absolutely. Most levels take only a minute or two to complete.
+                  Endless mode can last longer if you want a continuous
+                  challenge. The game works well for quick breaks or longer
+                  focused play.
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
-
-      <section class="class-how" id="how">
-        <div class="class-how-container">
-          <h2 class="class-about-title">How to Play</h2>
-
-          <ul class="class-how-list">
-            <li class="class-how-item">
-              <img
-                class="class-how-img"
-                src="/img/how/image (1).png"
-                alt="image"
-              />
-              <p class="class-how-text-bold">Merge Ingredients:</p>
-              <p class="class-how-text">
-                Drag and merge identical food items to discover new recipes.
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="class-characters" id="characters">
-        <div class="class-characters-container">
-          <h2 class="class-about-title">Characters</h2>
-          <ul class="class-characters-list">
-            <li class="class-characters-item">
-              <img class="class-characters-img" src="" alt="" />
-              <p class="class-characters-text-bold">Chef Bella:</p>
-              <p class="class-characters-text">
-                A cheerful pastry chef who inspires creativity in the kitchen
-                with her love for desserts.
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="class-reviews" id="reviews">
-        <div class="class-reviews-container">
-          <h2 class="class-about-title">Reviews</h2>
-          <ul class="class-reviews-list">
-            <li class="class-reviews-item">
-              <div class="class-reviews-item-top">
-                <img
-                  class="class-reviews-img"
-                  src="/img/reviews/image 12.png"
-                  alt="image"
-                />
-                <p class="class-reviews-text-bold">GourmetGamer:</p>
-              </div>
-              <p class="class-reviews-text">
-                "This game is so addictive! I love discovering new recipes and
-                decorating my kitchen."
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="class-faq" id="faq">
-        <div class="class-faq-container">
-          <h2 class="class-about-title">FAQ</h2>
-          <ul class="class-faq-list">
-            <li class="class-faq-item">
-              <div class="class-faq-question" onclick="toggleAnswer(this)">
-                <span>Is "Merge Food - Chef Decoration" free to play?</span>
-                <button class="class-toggle-button">
-                  <img src="/img/faq/icon.png" alt="Toggle" />
-                </button>
-              </div>
-              <div class="class-faq-answer">
-                Yes, the game is free to play with optional in-app purchases for
-                special items.
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="class-gallery" id="gallery">
-        <div class="class-gallery-container">
-          <h2 class="class-about-title">Gallery</h2>
-
-          <ul class="class-gallery-list">
-            <li class="class-gallery-item">
-              <img
-                class="class-gallery-image"
-                src="./img/gallery/3.png"
-                alt="gallery image"
-              />
-            </li>
-          </ul>
-          <div class="class-gallery-button-container">
-            <button class="class-gallery-button class-gallery-list-left">
-              <img
-                class="class-gallery-button-icon"
-                src="img"
-                alt="left button"
-              />
-            </button>
-            <button class="class-gallery-button class-gallery-list-right">
-              <img
-                class="class-gallery-button-icon"
-                src="img"
-                alt="right button"
-              />
-            </button>
+    </main>
+    <footer class="i-b-footer" style="margin: auto; background: #223a5d">
+      <div class="i-b-footer-container">
+        <div class="i-b-footer-wrapper">
+          <a class="i-b-footer-link" href="mailto:info@windtrace.online"
+            >info@windtrace.online</a
+          >
+          <div class="i-b-footer-wrap">
+            <a class="i-b-footer-text" href="/policy.html">Privacy Policy</a>
+            <a class="i-b-footer-text" href="/terms.html"
+              >Terms and Conditions
+            </a>
+            <a class="i-b-footer-text" href="/cookies.html">Cookies Policy</a>
           </div>
         </div>
-      </section>
-      <section class="class-features" id="features">
-        <div class="class-features-container">
-          <h2 class="class-about-title">Features</h2>
-
-          <ul class="class-features-list">
-            <li class="class-features-item">
-              <p class="class-features-text-bold">Daily Quests</p>
-              <img
-                class="class-features-img"
-                src="/img/features/image (2).png"
-                alt="image"
-              />
-              <p class="class-features-text">
-                Complete tasks for extra rewards.
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section>
-    </main>
-
+        <p class="i-b-footer-copyright">
+          © 2026 — All rights reserved. windtrace.online
+        </p>
+      </div>
+    </footer>
     <script src="js/mobile-menu.js"></script>
-    <script src="js/jquery-loc-class-0.js"></script>
+    <script src="js/jquery-loc-i-b-0.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="js/slick.js"></script>
   </body>
